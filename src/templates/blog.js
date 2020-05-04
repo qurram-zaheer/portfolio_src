@@ -35,7 +35,9 @@ const Blog = props => {
                 <h1 style={{ marginBottom: "0" }}>
                     {props.data.markdownRemark.frontmatter.title}
                 </h1>
-                <p>{props.data.markdownRemark.frontmatter.date}</p>
+                <p style={{ lineHeight: "1.1rem", fontSize: "1.1rem" }}>
+                    {props.data.markdownRemark.frontmatter.date}
+                </p>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: props.data.markdownRemark.html,

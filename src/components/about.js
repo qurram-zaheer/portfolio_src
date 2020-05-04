@@ -1,4 +1,6 @@
 import React from "react"
+import { IoMdArrowBack } from "react-icons/io"
+import { Link } from "gatsby"
 
 import aboutStyles from "../assets/css/about.module.scss"
 
@@ -14,6 +16,19 @@ const AboutSection = () => {
     ]
     return (
         <div className={aboutStyles.container}>
+            <div>
+                <Link to="/">
+                    <div
+                        className={aboutStyles.back}
+                        style={{ paddingLeft: "0" }}
+                    >
+                        <IoMdArrowBack />{" "}
+                        <span style={{ textDecoration: "underline" }}>
+                            GO BACK
+                        </span>
+                    </div>
+                </Link>
+            </div>
             <h1>About me</h1>
             <p className={aboutStyles.para}>
                 I'm very intrigued by how humans evolved, specifically in terms

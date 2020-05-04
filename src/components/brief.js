@@ -1,9 +1,11 @@
 import React from "react"
 import { FaTwitch, FaRegHandPeace } from "react-icons/fa"
 import { DiRust, DiJavascript1, DiPython } from "react-icons/di"
+import { RiArrowRightUpLine } from "react-icons/ri"
 
 import briefStyles from "../assets/css/brief.module.scss"
 import profilePic from "../assets/images/profile.jpg"
+import { Link } from "gatsby"
 
 const Brief = () => {
     return (
@@ -13,6 +15,20 @@ const Brief = () => {
                     Hi, I'm Qurram! <FaRegHandPeace></FaRegHandPeace>
                 </h1>
                 <h4>CS undergrad | Hardware geek</h4>
+                <div className={briefStyles.mobDeets}>
+                    <div>
+                        <Link to="/about">
+                            About
+                            <RiArrowRightUpLine />
+                        </Link>
+                    </div>
+                    <div>
+                        <Link to="/blog">
+                            Blog
+                            <RiArrowRightUpLine />
+                        </Link>
+                    </div>
+                </div>
                 <p>
                     I am currently pursuing my Bachelors at Mahindra Ecole
                     Centrale.
@@ -20,6 +36,10 @@ const Brief = () => {
                     I'm currently working under Dr. Arya K. Bhattacharya on the
                     implementation of a Game theory based expert system for an
                     industrial reactor.
+                    <br></br>\ (•◡•) /<br></br>
+                    <Link to="/about" style={{ fontWeight: "600" }}>
+                        Read more
+                    </Link>
                 </p>
                 <div className={briefStyles.skills}>
                     <ul>

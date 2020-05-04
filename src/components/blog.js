@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import { IoMdArrowBack } from "react-icons/io"
 
 import blogStyles from "../assets/css/blog.module.scss"
 
@@ -24,6 +25,19 @@ const BlogSection = () => {
     `)
     return (
         <div className={blogStyles.container}>
+            <div>
+                <Link to="/">
+                    <div
+                        className={blogStyles.back}
+                        style={{ paddingLeft: "0" }}
+                    >
+                        <IoMdArrowBack />{" "}
+                        <span style={{ textDecoration: "underline" }}>
+                            GO BACK
+                        </span>
+                    </div>
+                </Link>
+            </div>
             <h1>Blog</h1>
             <ul>
                 {data.allMarkdownRemark.edges.map(item => {

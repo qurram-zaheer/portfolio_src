@@ -10,8 +10,12 @@ const Header = ({ siteTitle, theme }) => (
     <header className={headerStyles.navbar}>
         <div className={headerStyles.logo}>
             <h2>
-                <Link className={headerStyles.navLinks} to="/">
-                    {siteTitle}
+                <Link
+                    className={headerStyles.navLinks}
+                    to="/"
+                    style={{ fontFamily: "Megrim", padding: "1rem" }}
+                >
+                    {"<q/z>"}
                 </Link>
             </h2>
         </div>
@@ -33,14 +37,7 @@ const Header = ({ siteTitle, theme }) => (
                     <li>CV</li>
                 </a>
             </ul>
-            <div
-                style={{
-                    marginTop: "2rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                }}
-            >
+            <div className={headerStyles.switch}>
                 <Switch
                     onChange={() =>
                         theme.updateTheme(
@@ -48,8 +45,8 @@ const Header = ({ siteTitle, theme }) => (
                         )
                     }
                     checked={theme.name === "dark"}
-                    onColor="#ffffff"
-                    offColor="#333"
+                    onColor="#333"
+                    offColor="#fffed9"
                     offHandleColor="#333"
                     checkedIcon={<img src={moonIcon} alt="moon"></img>}
                     uncheckedIcon={<img src={sunIcon} alt="sun"></img>}
