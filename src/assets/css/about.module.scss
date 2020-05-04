@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.para {
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    color: #696969;
+}
+
+.skills {
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin-right: 1rem;
+                padding: 1em;
+                border-radius: 5px;
+                font-size: 0.9rem;
+                box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(100, 110, 140, 0.4);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.lang {
+    background: radial-gradient(circle at 20% 20%, #cd00ff 25%, #b400e0 100%);
+}
+
+.fw {
+    background: white;
+    color: black;
+}
+
+.misc {
+    background: radial-gradient(circle at 20% 20%, #5183f5 25%, #4640ff 100%);
+}
