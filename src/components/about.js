@@ -1,6 +1,7 @@
 import React from "react"
 import { IoMdArrowBack } from "react-icons/io"
 import { Link } from "gatsby"
+import { FaHeart } from "react-icons/fa"
 
 import aboutStyles from "../assets/css/about.module.scss"
 
@@ -49,13 +50,44 @@ const AboutSection = () => {
             <div className={aboutStyles.skills}>
                 <div>
                     <ul>
-                        {skills.languages.map(item => (
-                            <li className={aboutStyles.lang}>{item}</li>
-                        ))}
+                        {skills.languages.map(item => {
+                            if (item === "Rust") {
+                                return (
+                                    <li className={aboutStyles.lang}>
+                                        <span
+                                            style={{
+                                                fontSize: "0.8rem",
+                                                color: "black",
+                                            }}
+                                        >
+                                            <FaHeart />{" "}
+                                        </span>
 
-                        {skills.frameworks.map(item => (
-                            <li className={aboutStyles.fw}>{item}</li>
-                        ))}
+                                        {item}
+                                    </li>
+                                )
+                            }
+                            return <li className={aboutStyles.lang}>{item}</li>
+                        })}
+
+                        {skills.frameworks.map(item => {
+                            if (item === "Vue") {
+                                return (
+                                    <li className={aboutStyles.fw}>
+                                        <span
+                                            style={{
+                                                fontSize: "0.8rem",
+                                                color: "red",
+                                            }}
+                                        >
+                                            <FaHeart />{" "}
+                                        </span>
+                                        {item}
+                                    </li>
+                                )
+                            }
+                            return <li className={aboutStyles.fw}>{item}</li>
+                        })}
                     </ul>
                 </div>
                 <br></br>

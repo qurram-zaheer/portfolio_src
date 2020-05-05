@@ -19,3 +19,16 @@ p {
         font-size: 0.9rem;
     }
 }
+
+.card {
+    padding: 2rem;
+    border-radius: 10px;
+    background: radial-gradient(circle at 20% 20%, #cd00ff 25%, #b400e0 100%);
+    box-shadow: 0.5rem 1.25rem 1.75rem 0 rgba(100, 110, 140, 0.4);
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    max-height: 65%;
+}

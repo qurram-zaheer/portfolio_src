@@ -51,20 +51,11 @@
     justify-content: center;
 }
 
-.card {
-    padding: 2rem;
-    border-radius: 10px;
-    background: radial-gradient(circle at 20% 20%, #cd00ff 25%, #b400e0 100%);
-    box-shadow: 0.5rem 1.25rem 1.75rem 0 rgba(100, 110, 140, 0.4);
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-}
-
 .profile {
     max-width: 120px;
     border-radius: 500px;
     margin: 0 auto;
+    height: 120px;
 }
 
 .img-container {
@@ -83,12 +74,16 @@
 .twitch-container {
     padding: 0.5rem;
     background: radial-gradient(circle at 20% 20%, #f7f7f7 25%, #d4d4d4 100%);
-    box-shadow: 0.5rem 1.25rem 1.75rem 0 rgba(100, 110, 140, 0.4);
+    box-shadow: 0.25rem 0.25rem 1rem 0 rgba(100, 110, 140, 0.4);
     color: black;
     max-width: 50px;
     margin: 0 auto;
     border-radius: 3px;
     font-size: 1.3rem;
+}
+
+.twitch-container:hover {
+    background: radial-gradient(circle at 20% 20%, #ffffff 25%, #dbdbdb 100%);
 }
 
 .skills {
@@ -98,6 +93,7 @@
         padding: 0;
         font-size: 2rem;
         margin: 0;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -111,6 +107,7 @@
 
 .mob-deets {
     display: flex;
+    margin-bottom: 0.5rem;
     div {
         padding: 0.8rem;
         font-size: 0.8rem;

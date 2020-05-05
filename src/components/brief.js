@@ -1,9 +1,10 @@
 import React from "react"
 import { FaTwitch, FaRegHandPeace } from "react-icons/fa"
-import { DiRust, DiJavascript1, DiPython } from "react-icons/di"
+import { DiRust, DiJavascript1, DiPython, DiGo } from "react-icons/di"
 import { RiArrowRightUpLine } from "react-icons/ri"
 
 import briefStyles from "../assets/css/brief.module.scss"
+import "../assets/css/index.scss"
 import profilePic from "../assets/images/profile.jpg"
 import { Link } from "gatsby"
 
@@ -15,6 +16,36 @@ const Brief = () => {
                     Hi, I'm Qurram! <FaRegHandPeace></FaRegHandPeace>
                 </h1>
                 <h4>CS undergrad | Hardware geek</h4>
+
+                <p style={{ marginBottom: "0.5rem" }}>
+                    I am currently pursuing my Bachelors at Mahindra Ecole
+                    Centrale.
+                    <br></br>
+                    I'm currently working under Dr. Arya K. Bhattacharya on the
+                    implementation of a Game theory based expert system for an
+                    industrial reactor.
+                    <br></br>\ (•◡•) /<br></br>
+                    <Link to="/about" style={{ fontWeight: "600" }}>
+                        Read more
+                    </Link>
+                </p>
+
+                <div className={briefStyles.skills}>
+                    <ul>
+                        <li>
+                            <DiJavascript1 />
+                        </li>
+                        <li>
+                            <DiPython />
+                        </li>
+                        <li>
+                            <DiRust />
+                        </li>
+                        <li>
+                            <DiGo />
+                        </li>
+                    </ul>
+                </div>
                 <div className={briefStyles.mobDeets}>
                     <div>
                         <Link to="/about">
@@ -29,31 +60,6 @@ const Brief = () => {
                         </Link>
                     </div>
                 </div>
-                <p>
-                    I am currently pursuing my Bachelors at Mahindra Ecole
-                    Centrale.
-                    <br></br>
-                    I'm currently working under Dr. Arya K. Bhattacharya on the
-                    implementation of a Game theory based expert system for an
-                    industrial reactor.
-                    <br></br>\ (•◡•) /<br></br>
-                    <Link to="/about" style={{ fontWeight: "600" }}>
-                        Read more
-                    </Link>
-                </p>
-                <div className={briefStyles.skills}>
-                    <ul>
-                        <li>
-                            <DiJavascript1 />
-                        </li>
-                        <li>
-                            <DiPython />
-                        </li>
-                        <li>
-                            <DiRust />
-                        </li>
-                    </ul>
-                </div>
                 <div className={briefStyles.contact}>
                     <p>
                         <a href="https://twitter.com/Decoherence17">Twitter</a>{" "}
@@ -65,7 +71,7 @@ const Brief = () => {
                 </div>
             </div>
             <div className={briefStyles.rightHalf}>
-                <div className={briefStyles.card}>
+                <div className="card">
                     <div className={briefStyles.imgContainer}>
                         <img
                             src={profilePic}
@@ -88,9 +94,11 @@ const Brief = () => {
                                 I love streaming Overwatch, you're welcome to
                                 join in and chill on my Twitch
                             </p>
-                            <div className={briefStyles.twitchContainer}>
-                                <FaTwitch />
-                            </div>
+                            <a href="twitch.tv/n0tdeco">
+                                <div className={briefStyles.twitchContainer}>
+                                    <FaTwitch />
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

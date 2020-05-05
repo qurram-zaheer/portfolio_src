@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "../assets/css/index.scss"
 
 import Header from "./header"
+import Footer from "./footer"
 
 import { ThemeContext } from "./ThemeContext"
 
@@ -40,6 +41,18 @@ const ThemedLayout = styled.div`
         font-weight: ${props =>
             props.theme.name === "dark" ? "600" : "inherit"};
     }
+
+    & .card {
+        background: ${props =>
+            props.theme.name === "light"
+                ? "radial-gradient(circle at 20% 20%,#bf00ff 25%,#9300c4 100%);"
+                : "radial-gradient(circle at 20% 20%,#404040 25%,#2b2b2b 100%);"};
+
+        box-shadow: ${props =>
+            props.theme.name === "dark"
+                ? "0.25rem 0.25rem 1rem 0 rgba(59, 64, 82, 0.4);"
+                : "inherit"};
+    }
 `
 
 const Layout = ({ children }) => {
@@ -61,6 +74,7 @@ const Layout = ({ children }) => {
                         theme={theme}
                     />
                     {children}
+                    <Footer />
                 </ThemedLayout>
             )}
         </ThemeContext.Consumer>
