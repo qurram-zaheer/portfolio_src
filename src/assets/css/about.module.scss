@@ -5,6 +5,7 @@
     margin: 0 auto;
     padding: 2rem;
     justify-content: space-between;
+    margin-bottom: 15vh;
 }
 
 .para {
@@ -62,4 +63,10 @@
 
     font-weight: 600;
     font-size: 0.7rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-bottom: 5vh;
+    }
 }

@@ -1,5 +1,4 @@
 .container {
-    bottom: 0;
     display: flex;
     max-width: 900px;
     margin: 0 auto;
@@ -9,4 +8,5 @@
     border-top: 1px solid white;
     box-shadow: 0 -1.25rem 1.75rem -1.25rem rgba(100, 110, 140, 0.4);
     z-index: 2;
+    margin-top: 5vh;
 }

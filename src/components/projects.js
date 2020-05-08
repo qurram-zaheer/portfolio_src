@@ -14,7 +14,7 @@ const Projects = () => {
         {
             name: "Covindia",
             img: covImg,
-            url: "covindia.com",
+            url: "https://covindia.com",
             flavor:
                 "Real time district wise tracker for the Corona virus spread in India. Caddy, Flask and gunicorn on the backend with Travis CI. Implemented load balancing and reverse proxies for scalability",
             repo: "https://github.com/covindia/CovIndia-Website",
@@ -23,7 +23,7 @@ const Projects = () => {
         {
             name: "PokeTwo",
             img: pokeImg,
-            url: "",
+
             flavor:
                 "Multiplayer pokemon battle simulator, built using websockets. Using Docker for scalability, and a player AI trained with Q learning",
             repo: "https://gitlab.com/poketwo",
@@ -32,7 +32,7 @@ const Projects = () => {
         {
             name: "qFeedbacker",
             img: qfImg,
-            url: "protected-plains-18708.herokuapp.com",
+            url: "https://protected-plains-18708.herokuapp.com",
             flavor:
                 "Batch email survey webapp, powered by stripe for payments, Google OAuth and webhooks for collecting surveys.",
             repo: "https://github.com/qurram-zaheer/qfeedbacker",

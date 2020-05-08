@@ -83,7 +83,7 @@ const Brief = () => {
                         <h3>
                             Find me on{" "}
                             <a
-                                href="github.com/qurram-zaheer"
+                                href="https://github.com/qurram-zaheer"
                                 style={{ color: "white" }}
                             >
                                 Github!
@@ -94,7 +94,7 @@ const Brief = () => {
                                 I love streaming Overwatch, you're welcome to
                                 join in and chill on my Twitch
                             </p>
-                            <a href="twitch.tv/n0tdeco">
+                            <a href="https://twitch.tv/n0tdeco">
                                 <div className={briefStyles.twitchContainer}>
                                     <FaTwitch />
                                 </div>

@@ -5,6 +5,7 @@
     margin: 0 auto;
     padding: 2rem;
     justify-content: space-between;
+    margin-bottom: 48vh;
 
     ul {
         a {
@@ -41,6 +42,7 @@
 }
 
 @media (max-width: 600px) {
-    .back {
+    .container {
+        margin-bottom: 32vh;
     }
 }
